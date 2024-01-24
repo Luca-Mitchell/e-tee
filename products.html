@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Tee: Eco-Friendly Tees</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <img src="images/logo.png" alt="Golf company logo">
+        <div id="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="products.html">PRODUCTS</a>
+            <a href="why.html">WHY US</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="https://www.young-enterprise.org.uk/what-we-do/">YOUNG ENTERPRISE</a>
+        </div>
+    </nav>
+
+    <div id="mobile-nav">
+        <a href="" id="close" onclick="closeMenu(event)"><img src="images/close.png" alt="Close menu" id="close-button"></a>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="products.html">PRODUCTS</a></li>
+            <li><a href="why.html">WHY US</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="https://www.young-enterprise.org.uk/what-we-do/">YOUNG<br>ENTERPRISE</a></li>
+        </ul>
+    </div>
+
+    <a href="" id="menu" onclick="openMenu(event)"><img src="images/open.png" alt="Open menu" id="open-button"></a>
+
+    <script>
+        function openMenu(event) {
+            event.preventDefault()
+            const nav = document.getElementById("mobile-nav");
+            nav.style.right = "0vw";
+        }
+        function closeMenu(event) {
+            event.preventDefault()
+            const nav = document.getElementById("mobile-nav");
+            nav.style.right = "-100vw";
+        }
+    </script>
+
+    <div>
+        <div class="header">
+            <h1>PRODUCTS</h1>
+        </div>
+    
+        <div id="products-box">
+            <div id="products-box-content">
+                <h1>Our tees <em>FULLY</em> biodegrade faster than any others</h1>
+                <div id="products-box-content-images">
+                    <img src="images/plastic.png" alt="">
+                    <img src="images/wooden.png" alt="">
+                    <img src="images/bamboo.png" alt="">
+                    <img src="images/paper.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div id="products-shop-button-container">
+            <a href="" id="products-shop-button">SHOP NOW &#11208</a>
+        </div>
+    
+        <div id="products-carousel">
+            <div id="products-carousel-image-container">
+                <img src="images/carousel1.jpg" alt="" id="products-carousel-image-left">
+                <img src="images/carousel2.jpg" alt="" id="products-carousel-image">
+                <img src="images/carousel3.jpg" alt="" id="products-carousel-image-right">
+                <div class="carousel-button" id="carousel-left" onclick="carouselLeft(event)">
+                    <a href="" >&#11207</a>
+                </div>
+                <div class="carousel-button" id="carousel-right" onclick="carouselRight(event)">
+                    <a href="" >&#11208</a>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            function carouselLeft (event) {
+                event.preventDefault();
+                const leftImageID = "products-carousel-image-left";
+                const mainImageID = "products-carousel-image";
+                const rightImageID = "products-carousel-image-right";
+                
+                const currentLeftImage = document.getElementById(leftImageID);
+                const currentCenterImage = document.getElementById(mainImageID);
+                const currentRightImage = document.getElementById(rightImageID);
+                
+                currentLeftImage.id = rightImageID;
+                currentCenterImage.id = leftImageID;
+                currentRightImage.id = mainImageID;
+            }
+    
+            function carouselRight(event) {
+                event.preventDefault();
+                const leftImageID = "products-carousel-image-left";
+                const mainImageID = "products-carousel-image";
+                const rightImageID = "products-carousel-image-right";
+                
+                const currentLeftImage = document.getElementById(leftImageID);
+                const currentCenterImage = document.getElementById(mainImageID);
+                const currentRightImage = document.getElementById(rightImageID);
+                
+                currentLeftImage.id = mainImageID;
+                currentCenterImage.id = rightImageID;
+                currentRightImage.id = leftImageID;
+            }
+    
+        </script>
+    
+        <div id="find-us">
+            <div id="find-us-content">
+                <div id="find-us-info">
+                    <h1>Find Our Products</h1>
+                    <p>
+                        <em>Products available for a limited time only.</em>
+                        <br>No upcoming trade fairs.
+                        <br>Find our products online and at Lilley Brook Golf Club.
+                    </p>
+                </div>
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2463.385060016216!2d-2.0557255874851754!3d51.872183383871864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48711a33cdc138eb%3A0x15c07942f889a596!2sLilley%20Brook%20Golf%20Club!5e0!3m2!1sen!2suk!4v1705357326565!5m2!1sen!2suk" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    
+        <div id="products-content">
+            <div class="products-content-box" id="products-content-box-1">
+                <div class="products-content-box-content">
+                    <h1>header</h1>
+                    <ul>
+                        <li>point 1</li>
+                        <li>point 2</li>
+                        <li>point 3</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="products-content-box" id="products-content-box-2">
+                <div class="products-content-box-content">
+                    <img src="images/carousel1.jpg" alt="">
+                </div>
+            </div>
+            <div class="products-content-box" id="products-content-box-3">
+                <div class="products-content-box-content">
+                    <img src="images/carousel2.jpg" alt="">
+                </div>
+            </div>
+            <div class="products-content-box" id="products-content-box-4">
+                <div class="products-content-box-content">
+                    <h1>header</h1>
+                    <ul>
+                        <li>point 1</li>
+                        <li>point 2</li>
+                        <li>point 3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div id="products-content-mobile-container">
+            <div id="products-content-mobile">
+                <div class="products-content-mobile-content">
+                    <h2>subtitle</h2>
+                    <img src="images/carousel3.jpg" alt="">
+                    <ul>
+                        <li>point 1</li>
+                        <li>point 2</li>
+                        <li>point 3</li>
+                    </ul>
+                </div>
+                <div class="products-content-mobile-content">
+                    <h2>subtitle</h2>
+                    <img src="images/carousel3.jpg" alt="">
+                    <ul>
+                        <li>point 1</li>
+                        <li>point 2</li>
+                        <li>point 3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div id="footer-legal">
+            <h1>Legal</h1>
+            <ul>
+                <li>Company name: E-Tee A Branch Of Young Enterprise</li>
+                <li>Young Enterprise charity number: 313697</li>
+                <li>Young Enterprise registered office:</li>
+                <li>Young Enterprise</li>
+                <li>The Coram Campus,</li>
+                <li>41 Brunswick Square,</li>
+                <li>London,</li>
+                <li>WC1N 1AZ</li>
+            </ul>
+        </div>
+        <div id="footer-about">
+            <h1>About Us</h1>
+            <p>Elevate your game with our eco-friendly tees, crafted from locally sourced recycled paper. 
+                Championing sustainability, our tees reinforce our commitment to a cleaner environment, both on and off the course. 
+                Manufactured entirely in the UK, our tees outpace the competition by biodegrading up to 3x faster, thanks to our 
+                distinctive recycled paper composite material. Redefining the stereotype around paper products, our tees are 
+                not only strong and durable but also reusable. With an innovative biodegradable dextrin binder, they match the 
+                strength of traditional bamboo and wood - no need to worry about bent or broken tees.</p>
+        </div>
+        <div id="footer-contact">
+            <h1>Contact Us</h1>
+            <ul>
+                <li><a href="mailto:e.tee.youngenterprise@gmail.com">Email: e.tee.youngenterprise@gmail.com</a></li>
+                <li><a href="https://www.instagram.com/e_tee.ye/">Instagram: @e_tee.ye</a></li>
+                <li><a href="https://www.tiktok.com/@e.tee7?lang=en">TikTok: @e.tee7</a></li>
+                <li><a href="mailto:lucajmitchell@gmail.com">Website designed and developed by Luca Mitchell: lucajmitchell@gmail.com</a></li>
+            </ul>
+        </div>
+        <script>
+            function adjustFooterHeight() {
+                const legal = document.getElementById("footer-legal")
+                const about = document.getElementById("footer-about")
+                const contact = document.getElementById("footer-contact")
+                const height = about.offsetHeight
+                legal.style.height = "calc(" + height + "px - 4vh)"
+                contact.style.height = "calc(" + height + "px - 4vh)"
+            }
+            adjustFooterHeight();
+            window.addEventListener("resize", function () {
+                clearTimeout(this.resizeTimeout);
+                this.resizeTimeout = setTimeout(function () {
+                    adjustFooterHeight();
+                }, 100);
+            });
+        </script>
+    </div>
+
+</body>
+</html>

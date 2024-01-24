@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Tee: Eco-Friendly Tees</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <img src="images/logo.png" alt="Golf company logo">
+        <div id="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="products.html">PRODUCTS</a>
+            <a href="why.html">WHY US</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="https://www.young-enterprise.org.uk/what-we-do/">YOUNG ENTERPRISE</a>
+        </div>
+    </nav>
+
+    <div id="mobile-nav">
+        <a href="" id="close" onclick="closeMenu(event)"><img src="images/close.png" alt="Close menu" id="close-button"></a>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="products.html">PRODUCTS</a></li>
+            <li><a href="why.html">WHY US</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="https://www.young-enterprise.org.uk/what-we-do/">YOUNG<br>ENTERPRISE</a></li>
+        </ul>
+    </div>
+
+    <a href="" id="menu" onclick="openMenu(event)"><img src="images/open.png" alt="Open menu" id="open-button"></a>
+
+    <script>
+        function openMenu(event) {
+            event.preventDefault()
+            const nav = document.getElementById("mobile-nav");
+            nav.style.right = "0vw";
+        }
+        function closeMenu(event) {
+            event.preventDefault()
+            const nav = document.getElementById("mobile-nav");
+            nav.style.right = "-100vw";
+        }
+    </script>
+    <div>
+        <div id="why-header" class="header">
+            <h1>WHY US?</h1>
+        </div>
+
+        <div id="reviews">
+            <div class="review" id="top-review">
+                <div class="review-content">
+                    <p><b>Lorem ipsum</b> dolor sit amet consectetur adipisicing elit. <b>Sequi neque cum</b> nesciunt odit est culpa adipisci aperiam, dolorem voluptates. Facere maiores ipsa suscipit quaerat eos. Iste repellendus earum in tempore!</p>
+                </div>
+            </div>
+            <div class="review">
+                <div class="review-content">
+                    <p><b>Lorem ipsum</b> dolor sit amet consectetur adipisicing elit. <b>Sequi neque cum</b> nesciunt odit est culpa adipisci aperiam, dolorem voluptates. Facere maiores ipsa suscipit quaerat eos. Iste repellendus earum in tempore!</p>
+                </div>
+            </div>
+            <div class="review" id="bottom-review">
+                <div class="review-content">
+                    <p><b>Lorem ipsum</b> dolor sit amet consectetur adipisicing elit. <b>Sequi neque cum</b> nesciunt odit est culpa adipisci aperiam, dolorem voluptates. Facere maiores ipsa suscipit quaerat eos. Iste repellendus earum in tempore!</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="why-us">
+            <div id="why-us-button">
+                <a href="">SHOP NOW &#11208</a>
+            </div>
+            <div id="why-us-content">
+                <h1>WHY CHOOSE US?</h1>
+                <div class="why-us-content-content">
+                    <h2>subtitle</h2>
+                    <p>
+                        <img src="images/carousel1.jpg" alt="" class="float-left">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, molestias nostrum corporis nisi odio iusto necessitatibus suscipit cumque laboriosam quia praesentium ratione animi esse totam hic? Deleniti tempora temporibus voluptates?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum voluptatum adipisci nobis natus fuga nihil, animi voluptatem unde modi alias praesentium numquam sit earum accusamus quas laboriosam mollitia! Voluptatum, labore.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi blanditiis libero temporibus placeat perferendis maxime quas fugit doloribus, iste sed et quos voluptate recusandae quia explicabo molestias corrupti magni excepturi!
+                    </p>
+                </div>
+                <div class="why-us-content-content">
+                    <h2>subtitle</h2>
+                    <p>
+                        <img src="images/carousel2.jpg" alt="" class="float-right">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, molestias nostrum corporis nisi odio iusto necessitatibus suscipit cumque laboriosam quia praesentium ratione animi esse totam hic? Deleniti tempora temporibus voluptates?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum voluptatum adipisci nobis natus fuga nihil, animi voluptatem unde modi alias praesentium numquam sit earum accusamus quas laboriosam mollitia! Voluptatum, labore.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi blanditiis libero temporibus placeat perferendis maxime quas fugit doloribus, iste sed et quos voluptate recusandae quia explicabo molestias corrupti magni excepturi!
+                    </p>
+                </div>
+                <div class="why-us-content-content">
+                    <h2>subtitle</h2>
+                    <p>
+                        <img src="images/carousel3.jpg" alt="" class="float-left">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, molestias nostrum corporis nisi odio iusto necessitatibus suscipit cumque laboriosam quia praesentium ratione animi esse totam hic? Deleniti tempora temporibus voluptates?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum voluptatum adipisci nobis natus fuga nihil, animi voluptatem unde modi alias praesentium numquam sit earum accusamus quas laboriosam mollitia! Voluptatum, labore.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi blanditiis libero temporibus placeat perferendis maxime quas fugit doloribus, iste sed et quos voluptate recusandae quia explicabo molestias corrupti magni excepturi!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div id="footer-legal">
+            <h1>Legal</h1>
+            <ul>
+                <li>Company name: E-Tee A Branch Of Young Enterprise</li>
+                <li>Young Enterprise charity number: 313697</li>
+                <li>Young Enterprise registered office:</li>
+                <li>Young Enterprise</li>
+                <li>The Coram Campus,</li>
+                <li>41 Brunswick Square,</li>
+                <li>London,</li>
+                <li>WC1N 1AZ</li>
+            </ul>
+        </div>
+        <div id="footer-about">
+            <h1>About Us</h1>
+            <p>Elevate your game with our eco-friendly tees, crafted from locally sourced recycled paper. 
+                Championing sustainability, our tees reinforce our commitment to a cleaner environment, both on and off the course. 
+                Manufactured entirely in the UK, our tees outpace the competition by biodegrading up to 3x faster, thanks to our 
+                distinctive recycled paper composite material. Redefining the stereotype around paper products, our tees are 
+                not only strong and durable but also reusable. With an innovative biodegradable dextrin binder, they match the 
+                strength of traditional bamboo and wood - no need to worry about bent or broken tees.</p>
+        </div>
+        <div id="footer-contact">
+            <h1>Contact Us</h1>
+            <ul>
+                <li><a href="mailto:e.tee.youngenterprise@gmail.com">Email: e.tee.youngenterprise@gmail.com</a></li>
+                <li><a href="https://www.instagram.com/e_tee.ye/">Instagram: @e_tee.ye</a></li>
+                <li><a href="https://www.tiktok.com/@e.tee7?lang=en">TikTok: @e.tee7</a></li>
+                <li><a href="mailto:lucajmitchell@gmail.com">Website designed and developed by Luca Mitchell: lucajmitchell@gmail.com</a></li>
+            </ul>
+        </div>
+        <script>
+            function adjustFooterHeight() {
+                const legal = document.getElementById("footer-legal")
+                const about = document.getElementById("footer-about")
+                const contact = document.getElementById("footer-contact")
+                const height = about.offsetHeight
+                legal.style.height = "calc(" + height + "px - 4vh)"
+                contact.style.height = "calc(" + height + "px - 4vh)"
+            }
+            adjustFooterHeight();
+            window.addEventListener("resize", function () {
+                clearTimeout(this.resizeTimeout);
+                this.resizeTimeout = setTimeout(function () {
+                    adjustFooterHeight();
+                }, 100);
+            });
+        </script>
+    </div>
+
+</body>
+</html>
