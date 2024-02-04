@@ -178,7 +178,7 @@ nav img {
 
 #mobile-nav ul li a {
     text-decoration: none;
-    font-size: 5vw;
+    font-size: 4.5vw;
     color: white;
     font-weight: bold;
 }
@@ -330,7 +330,7 @@ nav img {
 }
 
 #header-content a:hover {
-    box-shadow: inset 400px 0 0 0 white;
+    box-shadow: inset 20vw 0 0 0 white;
     color: rgb(0, 82, 102);
 }
 
@@ -353,7 +353,7 @@ nav img {
 }
 
 #down:hover {
-    box-shadow: inset 0 100px 0 0 white;
+    box-shadow: inset 0 10vh 0 0 white;
     color: rgb(0, 82, 102);
 }
 
@@ -491,7 +491,7 @@ nav img {
     width: 5vh;
     height: 5vh;
     left: 50%;
-    top: 30%;
+    top: 25%;
 }
 
 #products-flag-img {
@@ -563,7 +563,7 @@ nav img {
     justify-content: space-evenly;
 }
 
-#products-box-content-images img{
+#products-box-content-images img {
     height: 20vh;
     margin: 0 2vh;
 }
@@ -587,7 +587,7 @@ nav img {
 }
 
 #products-shop-button:hover {
-    box-shadow: inset 500px 0 0 0 rgb(255, 134, 53);
+    box-shadow: inset 25vw 0 0 0 rgb(255, 134, 53);
     color: white;
 }
 
@@ -693,6 +693,7 @@ nav img {
     margin: 3vh;
     border-radius: 2vh;
     box-shadow: -2vh 2vh 0 0 rgb(255, 134, 53);
+    transform: translateY(-1vh);
 }
 
 #map {
@@ -757,6 +758,7 @@ nav img {
     line-height: 5vh;
     padding-bottom: 1vh;
     color: rgb(255, 134, 53);
+    white-space: nowrap;
 }
 
 .products-content-box-content ul {
@@ -764,9 +766,9 @@ nav img {
     width: 35vw;
 }
 
-.products-content-box-content li {
-    font-size: 3vh;
-    line-height: 4vh;
+.products-content-box-content p {
+    font-size: 2vh;
+    line-height: 2.5vh;
 }
 
 .products-content-box-content img {
@@ -888,7 +890,7 @@ nav img {
 }
 
 #why-us-button a:hover {
-    box-shadow: inset 500px 0 0 0 rgb(255, 134, 53);
+    box-shadow: inset 25vw 0 0 0 rgb(255, 134, 53);
     color: white;
 }
 
@@ -1023,7 +1025,7 @@ nav img {
 .pop-up-box {
     width: 60vw;
     height: 60vh;
-    padding: 5vh 5vh;
+    padding: 3vh 3vh;
     background: rgb(255, 134, 53);
     border-radius: 2vh;
     top: 20vh;
@@ -1200,7 +1202,7 @@ nav img {
 }
     
 #submit:hover {
-    box-shadow: inset 500px 0 0 0 rgb(255, 134, 53);
+    box-shadow: inset 20vw 0 0 0 rgb(255, 134, 53);
     color: white;
 }
 
@@ -1246,49 +1248,16 @@ nav img {
 
 
 
-@media (min-width: 3000px) {
-
-    #header-content a:hover {
-        box-shadow: inset 550px 0 0 0 white;
-    }
-
-    #down:hover {
-        box-shadow: inset 0 150px 0 0 white;
-    }
-
-    #why-us a:hover {
-        box-shadow: inset 700px 0 0 0 rgb(255, 134, 53);
-    }
-
-    #products-shop-button:hover {
-        box-shadow: inset 700px 0 0 0 rgb(255, 134, 53);
-    }
-
-    #submit:hover {
-        box-shadow: inset 700px 0 0 0 rgb(255, 134, 53);
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
 @media (orientation: portrait) {
 
-    #placeholder {
+    /* #placeholder {
         display: flex;
         overflow: hidden;
     }
 
     #home-page-content {
         display: none;
-    }
+    } */
 
 
 
@@ -1331,6 +1300,31 @@ nav img {
         height: 30vh;
         font-size: 7.5vh;
     }
+
+
+
+
+
+
+
+
+
+
+    .footer {
+        display: block;
+        padding-bottom: 1vh;
+    }
+
+    .footer div {
+        width: 80vw;
+        height: min-content !important;
+        margin: 3vh auto;
+    }
+
+    #home-footer {
+        transform: initial;
+    }
+
 
 
 
@@ -1412,6 +1406,10 @@ nav img {
         left: 61%;
     }
 
+    #scroll-to-here {
+        top: 5%;
+    }
+
 
 
 
@@ -1422,8 +1420,6 @@ nav img {
 
 
     #products-box {
-        width: min-content;
-        height: min-content;
         top: 0;
         left: 0.5vh;
         transform: initial;
@@ -1431,15 +1427,20 @@ nav img {
         box-shadow: -1vh 1vh 0 0  rgb(0, 82, 102);
         position: relative;
         margin: 5vh auto;
+        padding: 0;
     }
 
     #products-box-content {
         position: relative;
         top: 0;
-        transform: translateX(-50%);
         height: auto;
         width: 80vw;
         padding: 3vh;
+    }
+
+    #products-box-content-images img {
+        height: 20vh;
+        margin: 0;
     }
 
     #products-box-content h1 {
@@ -1464,22 +1465,18 @@ nav img {
     #products-shop-button {
         display: block;
         position: relative;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0;
         top: 0;
         padding: 2vh 0;
-        width: 50vw;
-        margin-top: 6vh;
+        width: 70vw;
+        margin-top: 2vh;
         text-align: center;
     }
 
     #products-carousel {
-        top: 0;
-        left: 0;
-        transform: initial;
         position: relative;
-        margin: auto;
-        margin-top: 6vh;
+        margin: 0;
+        width: 70vw;
     }
     
     #products-carousel-image-container {
@@ -1488,8 +1485,7 @@ nav img {
         width: 100vw;
         height: auto;
         box-shadow: none;
-        display: flex;
-        justify-content: center;
+        position: relative;
     }
     
     #products-carousel-image-left {
@@ -1532,16 +1528,14 @@ nav img {
         box-shadow: -0.7vh 0.7vh 0 0 rgb(0, 82, 102);
     }
 
+    #find-us {
+        position: relative;
+        margin: 7vh 0 0 0;
+    }
+
     #find-us-content {
         margin: auto;
         display: block;
-    }
-
-    #find-us {
-        position: relative;
-        top: 0;
-        margin-top: 5vh;
-        height: min-content;
     }
 
     #find-us-info,
@@ -1556,10 +1550,10 @@ nav img {
 
     #find-us-info p {
         font-size: 2vh;
-        width: 50vw;
+        width: 60vw;
         height: 30vh;
         transform: initial;
-        top: 15vh;
+        top: 10vh;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -1580,6 +1574,7 @@ nav img {
 
     #products-content-mobile-container {
         display: block;
+        margin: 8vh auto;
     }
 
     #products-content-mobile {
@@ -1601,13 +1596,16 @@ nav img {
         height: min-content;
         display: block;
         top: 0;
+        transform: translateX(1vw);
+        padding: 3vh 0;
+        margin-bottom: 2vh;
     }
 
     .review {
         position: relative;
         top: 0;
         width: 85vw;
-        margin: 3vh;
+        margin: 4vh 3vh;
         box-shadow: -1.5vh 1.5vh 0 0 rgb(0, 82, 102);
     }
     
@@ -1617,27 +1615,153 @@ nav img {
         top: 0;
         border-radius: 0;
         box-shadow: none;
+        margin: 0;
     }
 
     #why-us-content {
-        margin: 6.5vh 5vh;
+        margin: auto;
+        width: 90vw;
+
     }
 
     #why-us a {
         position: absolute;
         padding: 2vh 8vw;
         white-space: nowrap;
-        top: 6vh;
-    }
-
-    #why-us h1 {
-        padding-top: 20vh;
+        margin: 2vh auto;
     }
 
     #why-us img {
         width: 100%;
         height: auto;
         padding-bottom: 2vh;
+    }
+
+
+
+
+
+
+
+
+
+
+    #about-main {
+        display: flex;
+        top: 5vh;
+        padding: 3vh 3vh 0 3vh;
+        transform: translateX(2vw);
+        width: 75vw;
+        margin-bottom: 12vh;
+    }
+
+    .about-box {
+        width: 100%;
+        height: 20vh;
+        margin: 0 auto 3vh 0;
+    }
+
+    .about-box a {
+        width: 100%;
+        height: 20vh;
+        font-size: 3.5vh;
+        background: rgba(0, 82, 102, 0.7);
+    }
+
+    .about-box:hover {
+        box-shadow: inset 0 20vh 0 0 rgb(0, 82, 102);
+    }
+
+    .pop-up {
+        transform: translate(-2vw, -35vh);
+        position: fixed;
+    }
+
+    .pop-up-box {
+        padding: 2vh;
+        width: 80vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 70vh;
+    }
+
+    .pop-up-box a {
+        padding: 1.2vh;
+    }
+
+    .pop-up-box a img{
+        height: 4vh;
+    }
+
+    .pop-up-content-container {
+        padding: 3vh;
+    }
+
+    .pop-up-content-container h1 {
+        font-size: 5vh;
+    }
+
+
+
+
+
+
+
+
+
+
+    #contact-main {
+        margin-top: 2vh;
+        left: 1vh;
+    }
+
+    #top-row {
+        width: min-content;
+    }
+
+    #bottom-row {
+        margin-top: 4vh;
+    }
+
+    #links {
+        display: none;
+    }
+
+    #email-icon,
+    #insta-icon,
+    #tiktok-icon {
+        margin: 1.5vh;
+    }
+
+    #instagram {
+        display: none;
+    }
+
+    #tiktok {
+        display: none;
+    }
+
+    #icons {
+        width: 80vw;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0 1.5vh;
+    }
+
+    #form {
+        width: 100%;
+        padding: 2vh;
+    }
+
+    #form-content {
+        border-radius: 1vh;
+    }
+
+    #form-content input, #form-content textarea {
+        width: 90%;
+        position: relative;
+        margin: 0 auto 2vh auto;
     }
 
 }
