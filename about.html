@@ -50,7 +50,7 @@
         }
     </script>
 
-    <div>
+    <div id="about-us-page-content">
         <div id="about-header" class="header">
             <h1>ABOUT US</h1>
         </div>
@@ -158,6 +158,7 @@
         <script>
             function openPopUp(event, popUpID) {
                 event.preventDefault()
+                window.scrollTo(0, 0);
                 const popUp = document.getElementById(popUpID)
                 popUp.style.display = "block"
                 document.body.classList.add("scroll-lock");
