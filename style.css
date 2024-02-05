@@ -341,7 +341,7 @@ nav img {
     text-align: center;
     line-height: 8vh;
     left: 50%;
-    top: 73%;
+    top: 68%;
     transform: translate(-50%, -50%);
     text-decoration: none;
     color: white;
@@ -1348,7 +1348,7 @@ nav img {
     }
 
     #down {
-        top: 80%;
+        top: 85%;
     }
 
     #header-boxes,
