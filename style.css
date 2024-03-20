@@ -976,19 +976,19 @@ nav img {
 }
 
 #about-1 {
-    background-image: url(images/carousel1.jpg);
+    background-image: url(images/tees1.jpg);
     background-position: center;
     background-size: cover;
 }
 
 #about-2 {
-    background-image: url(images/carousel2.jpg);
+    background-image: url(images/carousel3.jpg);
     background-position: center;
     background-size: cover;
 }
 
 #about-3 {
-    background-image: url(images/carousel3.jpg);
+    background-image: url(images/tees2.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -1000,7 +1000,7 @@ nav img {
 }
 
 #about-5 {
-    background-image: url(images/carousel3.jpg);
+    background-image: url(images/tees3.jpg);
     background-position: center;
     background-size: cover;
 }
