@@ -358,7 +358,7 @@ nav img {
 }
 
 #header-boxes {
-    width: 80vw;
+    width: 100vw;
     height: 45vh;
     position: absolute;
     left: 50%;
@@ -427,7 +427,7 @@ nav img {
 }
 
 #header-boxes-shadows {
-    width: 80vw;
+    width: 100vw;
     height: 45vh;
     position: absolute;
     left: 50%;
@@ -564,7 +564,7 @@ nav img {
 }
 
 #products-box-content-images img {
-    height: 20vh;
+    height: 19vh;
     margin: 0 2vh;
 }
 
@@ -594,7 +594,7 @@ nav img {
 #products-carousel {
     position: relative;
     margin: 0 auto 9vh auto;
-    width: 70vw;
+    width: 80vw;
 }
 
 #products-carousel-image-container {
@@ -734,7 +734,7 @@ nav img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 85vw;
+    width: 90vw;
     align-items: center;
     margin: auto;
     margin-bottom: 5vh;
@@ -868,7 +868,7 @@ nav img {
     box-shadow: -2vh 2vh 0 0  rgb(0, 82, 102);
     margin: 10vh auto;
     padding-bottom: 5vh;
-    transform: translateY(10vh);
+    transform: translateY(-10vh);
 }
 
 #why-us-button {
@@ -954,7 +954,7 @@ nav img {
     width: 23vw;
     height: 17vw;
     margin: 2vh 0;
-    font-size: 4.5vh;
+    font-size: 2.5vw;
     border-radius: 1vh;
     transition: 0.3s ease-in-out;
 }
@@ -1129,7 +1129,7 @@ nav img {
 #links ul {
     list-style: none;
     color: white;
-    font-size: 5.5vh;
+    font-size: 3.5vw;
     line-height: 10vh;
 }
 
