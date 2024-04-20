@@ -480,6 +480,7 @@ nav img {
 
 #golf-course-bg {
     width: 100vw;
+    display: block;
 }
 
 #golf-course-bg-portrait {
