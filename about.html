@@ -3,232 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Tee: Eco-Friendly Tees</title>
-    <link rel="stylesheet" href="style.css">
+    <title>E-Tee: Eco Golf Tees</title>
+    <meta name="description" content="Eco-friendly golf tees made with recycled paper. Biodegrade faster than any other tee.">
+    <script src="https://kit.fontawesome.com/d6857f088c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style_about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <meta name="description" content="Recycled paper golf tees which biodegrade faster than any others">
 </head>
 <body>
+    
+    <a href="" onclick="openMenu(event)" class="menu-button" id="open"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></a>
 
-    <div id="placeholder">
-        <div id="placeholder-content">
-            <img src="images/logo.png" alt="Golf company logo">
-            <h1>E-Tee</h1>
-            <p id="small">A BRANCH OF YOUNG ENTERPRISE</p>
-            <p>Sorry, our mobile site is still under development but you can find our products by clicking the button below, or view the website on a computer at <em>www.e-tee.shop</em></p>
-            <a href="https://www.ye-tradingstation.org.uk/product/eco-friendly-golf-tees?v=2932">SHOP</a>
-        </div>
-    </div>
-
-    <nav>
-        <img src="images/logo.png" alt="Golf company logo">
-        <div id="nav-links">
-            <a href="index.html">HOME</a>
-            <a href="products.html">PRODUCTS</a>
-            <a href="why.html">WHY US</a>
-            <a href="about.html">ABOUT</a>
-            <a href="contact.html">CONTACT</a>
-            <a href="https://www.young-enterprise.org.uk/what-we-do/">YOUNG ENTERPRISE</a>
-        </div>
-    </nav>
-
-    <div id="mobile-nav">
-        <a href="" id="close" onclick="closeMenu(event)"><img src="images/close.png" alt="Close menu" id="close-button"></a>
+    <nav id="nav">
+        <a href="" onclick="closeMenu(event)" class="menu-button" id="close"><i class="fa-solid fa-close" style="color: #ffffff;"></i></a>
         <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="products.html">PRODUCTS</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
             <li><a href="why.html">WHY US</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <li><a href="https://www.young-enterprise.org.uk/what-we-do/">YOUNG<br>ENTERPRISE</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="https://www.young-enterprise.org.uk/what-we-do/">YOUNG ENTERPRISE</a></li>
         </ul>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h1>ABOUT US</h1>
+        </div>
+    </header>
+
+    <div class="cards-container">
+        <div class="grid">
+            <div class="card" id="card-1">
+                <a href="" onclick="openPopUp(event, '1')">Who Are We?</a>
+            </div>
+            <div class="card" id="card-2">
+                <a href="" onclick="openPopUp(event, '2')">Our Development</a>
+            </div>
+            <div class="card" id="card-3">
+                <a href="" onclick="openPopUp(event, '3')">How We Make Them</a>
+            </div>
+            <div class="card" id="card-4">
+                <a href="" onclick="openPopUp(event, '4')">What Is Young Enterprise?</a>
+            </div>
+            <div class="card" id="card-5">
+                <a href="" onclick="openPopUp(event, '5')">What Makes Our Tees Better?</a>
+            </div>
+            <div class="card" id="card-6">
+                <a href="" onclick="openPopUp(event, '6')">Testimonials</a>
+            </div>
+        </div>
     </div>
 
-    <a href="" id="menu" onclick="openMenu(event)"><img src="images/open.png" alt="Open menu" id="open-button"></a>
+    <div class="popup" id="popup-1">
+        <div class="popup-main">
+            <div class="popup-content">
+                <a href="" onclick="closePopUp(event, '1')"><i class="fa-solid fa-close"></i></a>
+                <h1>Who Are We?</h1>
+                <p>We are E-Tee, a young enterprise company led entirely by Year 12 students from Balcarras Sixth Form. We are devoted to saving the environment and providing a pleasant golfing experience at the same time. Our tees are perfect for every skill level, whether beginner or pro, and with our bespoke manufacturing process, we put only the utmost care into every product.</p>
+                <img src="images/team.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup-2">
+        <div class="popup-main">
+            <div class="popup-content">
+                <a href="" onclick="closePopUp(event, '2')"><i class="fa-solid fa-close"></i></a>
+                <h1>Our Development</h1>
+                <p>Initially, our goal was to make these tees out of a waste product from coffee production called “chaff.” Its main selling points were its rapid biodegradability, harmlessness to the surrounding grass and wildlife, and the lack of threat posed to groundskeeping equipment such as lawnmowers. Unfortunately, this material proved to be far too hard to work with, and we ran into issues regarding mould and longevity. Our solution to these issues came in the form of the humble sheet of A4. We noticed the school was throwing away vast amounts of the stuff, and decided recycled paper would fill the need for an easy, strong material to save from the rubbish bins. With our knowledge of eco-friendly glues, it was no difficulty at all to transfer to our now signature home-rolled tees.</p>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup-3">
+        <div class="popup-main">
+            <div class="popup-content">
+                <a href="" onclick="closePopUp(event, '3')"><i class="fa-solid fa-close"></i></a>
+                <h1>How We Make Them</h1>
+                <p>The manufacturing process is nice and simple: our glue is made through the mixture of water and dextrin over heat. Dextrin is a fully biodegradable form of carbohydrate, which forms strong bonds when used as a glue. The tees begin as waste paper from the various sources around school, where it is cut into trapezoid strips which give it the classic tapered end. The strips are coated in glue before being rolled up into the tee-shapes, then dipped in a stronger concentration for extra hardness. Finally, a separate strip is wound around the top to form the head for the golf balls to rest in, before they’re left out to dry and set. The end product is the solid E-Tees you know and love, each formed with care.</p>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup-4">
+        <div class="popup-main">
+            <div class="popup-content">
+                <a href="" onclick="closePopUp(event, '4')"><i class="fa-solid fa-close"></i></a>
+                <h1>What Is Young Enterprise?</h1>
+                <p>Young Enterprise is a charity and competition whose purpose is to educate sixth form students about enterprise and finance. They work directly with teachers, volunteers, influencers and of course us, the students, with the aim of creating a successful future. Their mission has continued for over 60 years, supporting the development and application of enterprising mindsets and skills. They believe every young person has the opportunity to learn the vital skills and enterprising mindset needed to earn and look after their money and make a positive contribution to their community, so they empower these students to discover, develop and celebrate their skills and potential.</p>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup-5">
+        <div class="popup-main">
+            <div class="popup-content">
+                <a href="" onclick="closePopUp(event, '5')"><i class="fa-solid fa-close"></i></a>
+                <h1>What Makes Our Tees Better?</h1>
+                <p>We use recycled paper from our school and a homemade adhesive formulation to create durable, biodegradable golf tees. Estimates suggest that around 80% of golfers use plastic tees, which remain as litter for around 450 years before disappearing completely, releasing toxic microplastics into the soil and killing lawns. In fact, many golf courses are considering banning plastic tees altogether. The paper tees we sell are safe to be left in nature. No more searching for pink plastic refuse in the woods. Our formulation is also superior to bamboo tees, which have to be shipped from the far corners of the world, and last far longer in the wild before breaking down, all the while remaining a hazard for wildlife when they snap to leave sharp debris scattered over the environment.</p>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup-6">
+        <div class="popup-main">
+            <div class="popup-content">
+                <a href="" onclick="closePopUp(event, '6')"><i class="fa-solid fa-close"></i></a>
+                <h1>Testimonials</h1>
+                <p>"It felt great knowing I was doing my bit to protect the planet and make my passion for golf more sustainable"</p>
+                <p>&#160</p>
+                <p>"Great value for money; you can tell a lot of work went into these, they look very professional"</p>
+                <p>&#160</p>
+                <p>"Can't believe they are only made with 2 ingredients!"</p>
+            </div>
+        </div>
+    </div>
 
     <script>
-        function openMenu(event) {
+        function openPopUp(event, num) {
             event.preventDefault()
-            const nav = document.getElementById("mobile-nav");
-            nav.style.right = "0vw";
+            const popUp = document.getElementById(`popup-${num}`)
+            popUp.style.display = "flex"
         }
-        function closeMenu(event) {
+        function closePopUp(event, num) {
             event.preventDefault()
-            const nav = document.getElementById("mobile-nav");
-            nav.style.right = "-100vw";
+            const popUp = document.getElementById(`popup-${num}`)
+            popUp.style.display = "none"
         }
     </script>
 
-    <div id="about-us-page-content">
-        <div id="about-header" class="header">
-            <h1>ABOUT US</h1>
+    <footer>
+        <div class="footer-card">
+            <div class="footer-content">
+                <h1>LEGAL</h1>
+                <ul>
+                    <li>Company name: E-Tee A Branch Of Young Enterprise</li>
+                    <li>Young Enterprise charity number: 313697</li>
+                    <li>Young Enterprise registered office:</li>
+                    <li>Young Enterprise</li>
+                    <li>The Coram Campus,</li>
+                    <li>41 Brunswick Square,</li>
+                    <li>London,</li>
+                    <li>WC1N 1AZ</li>
+                </ul>
+            </div>
         </div>
+        <div class="footer-card">
+            <div class="footer-content">
+                <h1>ABOUT US</h1>
+                <p>Elevate your game with our eco-friendly tees, crafted from locally sourced recycled paper. 
+                    Championing sustainability, our tees reinforce our commitment to a cleaner environment, both on and off the course. 
+                    Manufactured entirely in the UK, our tees outpace the competition by biodegrading up to 3x faster, thanks to our 
+                    distinctive recycled paper composite material. Redefining the stereotype around paper products, our tees are 
+                    not only strong and durable but also reusable. With an innovative biodegradable dextrin binder, they match the 
+                    strength of traditional bamboo and wood - no need to worry about bent or broken tees.</p>            </div>
+        </div>
+        <div class="footer-card">
+            <div class="footer-content">
+                <h1>CONTACT US</h1>
+                <ul>
+                    <li><a href="mailto:e.tee.youngenterprise@gmail.com">Email: e.tee.youngenterprise@gmail.com</a></li>
+                    <li><a href="https://www.instagram.com/e_tee.ye/">Instagram: @e_tee.ye</a></li>
+                    <li><a href="https://www.tiktok.com/@e.tee7?lang=en">TikTok: @e.tee7</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
-        <div id="about-main">
-            <div id="about-1" class="about-box">
-                <a href="" onclick="openPopUp(event, 'pop-up-1')">WHO<br>ARE WE?</a>
-            </div>
-            <div id="about-2" class="about-box">
-                <a href="" onclick="openPopUp(event, 'pop-up-2')">OUR<br>DEVELOPMENT<br>JOURNEY</a>
-            </div>
-            <div id="about-3" class="about-box">
-                <a href="" onclick="openPopUp(event, 'pop-up-3')">HOW WE<br>MAKE THEM</a>
-            </div>
-            <div id="about-4" class="about-box">
-                <a href="" onclick="openPopUp(event, 'pop-up-4')">WHAT IS<br>YOUNG<br>ENTERPRISE?</a>
-            </div>
-            <div id="about-5" class="about-box">
-                <a href="" onclick="openPopUp(event, 'pop-up-5')">WHAT MAKES<br>OUR<br>TEES BETTER?</a>
-            </div>
-            <div id="about-6" class="about-box">
-                <a href="" onclick="openPopUp(event, 'pop-up-6')">TESTIMONIALS</a>
-        </div>
-
-        <div class="pop-up" id="pop-up-1">
-            <div class="pop-up-box">
-                <a href="" onclick="closePopUp(event, 'pop-up-1')"><img src="images/close.png" alt=""></a>
-                <div class="pop-up-content">
-                    <div class="pop-up-content-container">
-                        <h1>Who are we?</h1>
-                        <p>We are E-Tee, a young enterprise company led entirely by Year 12 students from Balcarras Sixth Form. We are devoted to saving the environment and providing a pleasant golfing experience at the same time. Our tees are perfect for every skill level, whether beginner or pro, and with our bespoke manufacturing process, we put only the utmost care into every product.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="pop-up" id="pop-up-2">
-            <div class="pop-up-box">
-                <a href="" onclick="closePopUp(event, 'pop-up-2')"><img src="images/close.png" alt=""></a>
-                <div class="pop-up-content">
-                    <div class="pop-up-content-container">
-                        <h1>Our development journey</h1>
-                        <p>Initially, our goal was to make these tees out of a waste product from coffee production called “chaff.” Its main selling points were its rapid biodegradability, harmlessness to the surrounding grass and wildlife, and the lack of threat posed to groundskeeping equipment such as lawnmowers. Unfortunately, this material proved to be far too hard to work with, and we ran into issues regarding mould and longevity. Our solution to these issues came in the form of the humble sheet of A4. We noticed the school was throwing away vast amounts of the stuff, and decided recycled paper would fill the need for an easy, strong material to save from the rubbish bins. With our knowledge of eco-friendly glues, it was no difficulty at all to transfer to our now signature home-rolled tees.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="pop-up" id="pop-up-3">
-            <div class="pop-up-box">
-                <a href="" onclick="closePopUp(event, 'pop-up-3')"><img src="images/close.png" alt=""></a>
-                <div class="pop-up-content">
-                    <div class="pop-up-content-container">
-                        <h1>How we make them</h1>
-                        <p>The manufacturing process is nice and simple: our glue is made through the mixture of water and dextrin over heat. Dextrin is a fully biodegradable form of carbohydrate, which forms strong bonds when used as a glue. The tees begin as waste paper from the various sources around school, where it is cut into trapezoid strips which give it the classic tapered end. The strips are coated in glue before being rolled up into the tee-shapes, then dipped in a stronger concentration for extra hardness. Finally, a separate strip is wound around the top to form the head for the golf balls to rest in, before they’re left out to dry and set. The end product is the solid E-Tees you know and love, each formed with care. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="pop-up" id="pop-up-4">
-            <div class="pop-up-box">
-                <a href="" onclick="closePopUp(event, 'pop-up-4')"><img src="images/close.png" alt=""></a>
-                <div class="pop-up-content">
-                    <div class="pop-up-content-container">
-                        <h1>What is Young Enterprise?</h1>
-                        <p>Young Enterprise is a charity and competition whose purpose is to educate sixth form students about enterprise and finance. They work directly with teachers, volunteers, influencers and of course us, the students, with the aim of creating a successful future. Their mission has continued for over 60 years, supporting the development and application of enterprising mindsets and skills. They believe every young person has the opportunity to learn the vital skills and enterprising mindset needed to earn and look after their money and make a positive contribution to their community, so they empower these students to discover, develop and celebrate their skills and potential.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="pop-up" id="pop-up-5">
-            <div class="pop-up-box">
-                <a href="" onclick="closePopUp(event, 'pop-up-5')"><img src="images/close.png" alt=""></a>
-                <div class="pop-up-content">
-                    <div class="pop-up-content-container">
-                        <h1>What makes our tees better?</h1>
-                        <p>We use recycled paper from our school and a homemade adhesive formulation to create durable, biodegradable golf tees. Estimates suggest that around 80% of golfers use plastic tees, which remain as litter for around 450 years before disappearing completely, releasing toxic microplastics into the soil and killing lawns. In fact, many golf courses are considering banning plastic tees altogether. The paper tees we sell are safe to be left in nature. No more searching for pink plastic refuse in the woods. Our formulation is also superior to bamboo tees, which have to be shipped from the far corners of the world, and last far longer in the wild before breaking down, all the while remaining a hazard for wildlife when they snap to leave sharp debris scattered over the environment.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="pop-up" id="pop-up-6">
-            <div class="pop-up-box">
-                <a href="" onclick="closePopUp(event, 'pop-up-6')"><img src="images/close.png" alt=""></a>
-                <div class="pop-up-content">
-                    <div class="pop-up-content-container">
-                        <h1>Testimonials</h1>
-                        <p>"It felt great knowing I was doing my bit to protect the planet and make my passion for golf more sustainable"</p>
-                        <p>&#160</p>
-                        <p>"Great value for money; you can tell a lot of work went into these, they look very professional"</p>
-                        <p>&#160</p>
-                        <p>"Can't believe they are only made with 2 ingredients!"</p>
-                        <p>&#160</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <script>
-            function openPopUp(event, popUpID) {
-                event.preventDefault()
-                window.scrollTo(0, 0);
-                const popUp = document.getElementById(popUpID)
-                popUp.style.display = "block"
-                document.body.classList.add("scroll-lock");
-            }
-            function closePopUp(event, popUpID) {
-                event.preventDefault()
-                const popUp = document.getElementById(popUpID)
-                popUp.style.display = "none"
-                document.body.classList.remove("scroll-lock");
-            }
-        </script>
-    </div>
-
-    <div class="footer">
-        <div id="footer-legal">
-            <h1>Legal</h1>
-            <ul>
-                <li>Company name: E-Tee A Branch Of Young Enterprise</li>
-                <li>Young Enterprise charity number: 313697</li>
-                <li>Young Enterprise registered office:</li>
-                <li>Young Enterprise</li>
-                <li>The Coram Campus,</li>
-                <li>41 Brunswick Square,</li>
-                <li>London,</li>
-                <li>WC1N 1AZ</li>
-            </ul>
-        </div>
-        <div id="footer-about">
-            <h1>About Us</h1>
-            <p>Elevate your game with our eco-friendly tees, crafted from locally sourced recycled paper. 
-                Championing sustainability, our tees reinforce our commitment to a cleaner environment, both on and off the course. 
-                Manufactured entirely in the UK, our tees outpace the competition by biodegrading up to 3x faster, thanks to our 
-                distinctive recycled paper composite material. Redefining the stereotype around paper products, our tees are 
-                not only strong and durable but also reusable. With an innovative biodegradable dextrin binder, they match the 
-                strength of traditional bamboo and wood - no need to worry about bent or broken tees.</p>
-        </div>
-        <div id="footer-contact">
-            <h1>Contact Us</h1>
-            <ul>
-                <li><a href="mailto:e.tee.youngenterprise@gmail.com">Email: e.tee.youngenterprise@gmail.com</a></li>
-                <li><a href="https://www.instagram.com/e_tee.ye/">Instagram: @e_tee.ye</a></li>
-                <li><a href="https://www.tiktok.com/@e.tee7?lang=en">TikTok: @e.tee7</a></li>
-            </ul>
-        </div>
-        <script>
-            function adjustFooterHeight() {
-                const legal = document.getElementById("footer-legal")
-                const about = document.getElementById("footer-about")
-                const contact = document.getElementById("footer-contact")
-                const height = about.offsetHeight
-                legal.style.height = "calc(" + height + "px - 4vh)"
-                contact.style.height = "calc(" + height + "px - 4vh)"
-            }
-            adjustFooterHeight();
-            window.addEventListener("resize", function () {
-                clearTimeout(this.resizeTimeout);
-                this.resizeTimeout = setTimeout(function () {
-                    adjustFooterHeight();
-                }, 100);
-            });
-        </script>
-    </div>
+    <script>
+        function openMenu() {
+            event.preventDefault()
+            const nav = document.getElementById("nav")
+            nav.style.right = "0"
+        }
+        function closeMenu() {
+            event.preventDefault()
+            const nav = document.getElementById("nav")
+            nav.style.right = "-100%"
+        }
+        function resizeNav() {
+            document.getElementById("nav").contentWindow.location.reload(true);
+        }
+        window.addEventListener("resize", resizeNav)
+    </script>
 
 </body>
 </html>

@@ -3,247 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Tee: Eco-Friendly Tees</title>
-    <link rel="stylesheet" href="style.css">
+    <title>E-Tee: Eco Golf Tees</title>
+    <meta name="description" content="Eco-friendly golf tees made with recycled paper. Biodegrade faster than any other tee.">
+    <script src="https://kit.fontawesome.com/d6857f088c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style_products.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <meta name="description" content="Recycled paper golf tees which biodegrade faster than any others">
 </head>
 <body>
+    
+    <a href="" onclick="openMenu(event)" class="menu-button" id="open"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></a>
 
-    <div id="placeholder">
-        <div id="placeholder-content">
-            <img src="images/logo.png" alt="Golf company logo">
-            <h1>E-Tee</h1>
-            <p id="small">A BRANCH OF YOUNG ENTERPRISE</p>
-            <p>Sorry, our mobile site is still under development but you can find our products by clicking the button below, or view the website on a computer at <em>www.e-tee.shop</em></p>
-            <a href="https://www.ye-tradingstation.org.uk/product/eco-friendly-golf-tees?v=2932">SHOP</a>
-        </div>
-    </div>
-
-    <nav>
-        <img src="images/logo.png" alt="Golf company logo">
-        <div id="nav-links">
-            <a href="index.html">HOME</a>
-            <a href="products.html">PRODUCTS</a>
-            <a href="why.html">WHY US</a>
-            <a href="about.html">ABOUT</a>
-            <a href="contact.html">CONTACT</a>
-            <a href="https://www.young-enterprise.org.uk/what-we-do/">YOUNG ENTERPRISE</a>
-        </div>
-    </nav>
-
-    <div id="mobile-nav">
-        <a href="" id="close" onclick="closeMenu(event)"><img src="images/close.png" alt="Close menu" id="close-button"></a>
+    <nav id="nav">
+        <a href="" onclick="closeMenu(event)" class="menu-button" id="close"><i class="fa-solid fa-close" style="color: #ffffff;"></i></a>
         <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="products.html">PRODUCTS</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
             <li><a href="why.html">WHY US</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <li><a href="https://www.young-enterprise.org.uk/what-we-do/">YOUNG<br>ENTERPRISE</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="https://www.young-enterprise.org.uk/what-we-do/">YOUNG ENTERPRISE</a></li>
         </ul>
-    </div>
+    </nav>
 
-    <a href="" id="menu" onclick="openMenu(event)"><img src="images/open.png" alt="Open menu" id="open-button"></a>
-
-    <script>
-        function openMenu(event) {
-            event.preventDefault()
-            const nav = document.getElementById("mobile-nav");
-            nav.style.right = "0vw";
-        }
-        function closeMenu(event) {
-            event.preventDefault()
-            const nav = document.getElementById("mobile-nav");
-            nav.style.right = "-100vw";
-        }
-    </script>
-
-    <div>
-        <div class="header">
+    <header>
+        <div class="header-content">
             <h1>PRODUCTS</h1>
         </div>
-    
-        <div id="products-box">
-            <div id="products-box-content">
-                <h1>Our tees <em>FULLY</em> biodegrade faster than any others</h1>
-                <div id="products-box-content-images">
-                    <img src="images/plastic.png" alt="">
-                    <img src="images/wooden.png" alt="">
-                    <img src="images/bamboo.png" alt="">
-                    <img src="images/paper.png" alt="">
-                </div>
-            </div>
-        </div>
-        
-        <div id="products-shop-button-container">
-            <a href="https://www.ye-tradingstation.org.uk/product/eco-friendly-golf-tees?v=2932" id="products-shop-button">SHOP NOW &#11208</a>
-        </div>
-    
-        <div id="products-carousel">
-            <div id="products-carousel-image-container">
-                <img src="images/tees1.jpg" alt="" id="products-carousel-image-left">
-                <img src="images/tees2.jpg" alt="" id="products-carousel-image">
-                <img src="images/tees3.jpg" alt="" id="products-carousel-image-right">
-                <div class="carousel-button" id="carousel-left" onclick="carouselLeft(event)">
-                    <a href="" >&#11207</a>
-                </div>
-                <div class="carousel-button" id="carousel-right" onclick="carouselRight(event)">
-                    <a href="" >&#11208</a>
-                </div>
-            </div>
-        </div>
-    
-        <script>
-            function carouselLeft (event) {
-                event.preventDefault();
-                const leftImageID = "products-carousel-image-left";
-                const mainImageID = "products-carousel-image";
-                const rightImageID = "products-carousel-image-right";
-                
-                const currentLeftImage = document.getElementById(leftImageID);
-                const currentCenterImage = document.getElementById(mainImageID);
-                const currentRightImage = document.getElementById(rightImageID);
-                
-                currentLeftImage.id = rightImageID;
-                currentCenterImage.id = leftImageID;
-                currentRightImage.id = mainImageID;
-            }
-    
-            function carouselRight(event) {
-                event.preventDefault();
-                const leftImageID = "products-carousel-image-left";
-                const mainImageID = "products-carousel-image";
-                const rightImageID = "products-carousel-image-right";
-                
-                const currentLeftImage = document.getElementById(leftImageID);
-                const currentCenterImage = document.getElementById(mainImageID);
-                const currentRightImage = document.getElementById(rightImageID);
-                
-                currentLeftImage.id = mainImageID;
-                currentCenterImage.id = rightImageID;
-                currentRightImage.id = leftImageID;
-            }
-    
-        </script>
-    
-        <div id="find-us">
-            <div id="find-us-content">
-                <div id="find-us-info">
-                    <h1>Find Our Products</h1>
-                    <p>
-                        <em>Products available online for a limited time only.</em>
-                        <br>
-                        <br>
-                        <a href="https://www.ye-tradingstation.org.uk/product/eco-friendly-golf-tees?v=2932" style="color: rgb(255, 134, 53);">SHOP ONLINE &#11208</a>
-                    </p>
-                </div>
-                <div id="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2462.8793585131107!2d-2.046280087484752!3d51.88141468319431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48711bd15594737f%3A0xb49f08da72c55a0b!2sBalcarras%20Academy!5e0!3m2!1sen!2suk!4v1711055855820!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </div>
-    
-        <div id="products-content">
-            <div class="products-content-box" id="products-content-box-1">
-                <div class="products-content-box-content">
-                    <h1>Made with recycled paper&#160&#160&#160&#160&#160&#160&#160&#160</h1>
-                    <p>Sourced from local schools, our recycled paper not only reinforces our commitment to sustainability but also fosters collaboration within our community to achieve a cleaner environment - on the course and off. All of our tees are 100% manufactured in the UK</p>
-                </div>
-            </div>
-            <div class="products-content-box" id="products-content-box-2">
-                <div class="products-content-box-content">
-                    <img src="images/tees2.jpg" alt="">
-                </div>
-            </div>
-            <div class="products-content-box" id="products-content-box-3">
-                <div class="products-content-box-content">
-                    <img src="images/tees1.jpg" alt="">
-                </div>
-            </div>
-            <div class="products-content-box" id="products-content-box-4">
-                <div class="products-content-box-content">
-                    <h1>Strong and reusable&#160&#160&#160&#160&#160&#160&#160&#160</h1>
-                    <p>Redefining the stigma around paper products, our tees are strong, durable and reusable. Through our innovative use of a biodegradable dextrin binder, our tees boast a strength comparable to traditional bamboo and wood - no need to worry about about bending or breaking with a stray swing.</p>
-                </div>
-            </div>
-        </div>
-    
-        <div id="products-content-mobile-container">
-            <div id="products-content-mobile">
-                <div class="products-content-mobile-content">
-                    <h2>subtitle</h2>
-                    <img src="images/carousel3.jpg" alt="">
-                    <ul>
-                        <li>point 1</li>
-                        <li>point 2</li>
-                        <li>point 3</li>
-                    </ul>
-                </div>
-                <div class="products-content-mobile-content">
-                    <h2>subtitle</h2>
-                    <img src="images/carousel3.jpg" alt="">
-                    <ul>
-                        <li>point 1</li>
-                        <li>point 2</li>
-                        <li>point 3</li>
-                    </ul>
-                </div>
+    </header>
+
+    <div class="infographic-container">
+        <div class="infographic">
+            <div class="infographic-images">
+                <img src="images/plastic.png" alt="">
+                <img src="images/wooden.png" alt="">
+                <img src="images/bamboo.png" alt="">
+                <img src="images/paper.png" alt="">
             </div>
         </div>
     </div>
 
-    <div class="footer">
-        <div id="footer-legal">
-            <h1>Legal</h1>
-            <ul>
-                <li>Company name: E-Tee A Branch Of Young Enterprise</li>
-                <li>Young Enterprise charity number: 313697</li>
-                <li>Young Enterprise registered office:</li>
-                <li>Young Enterprise</li>
-                <li>The Coram Campus,</li>
-                <li>41 Brunswick Square,</li>
-                <li>London,</li>
-                <li>WC1N 1AZ</li>
-            </ul>
-        </div>
-        <div id="footer-about">
-            <h1>About Us</h1>
-            <p>Elevate your game with our eco-friendly tees, crafted from locally sourced recycled paper. 
-                Championing sustainability, our tees reinforce our commitment to a cleaner environment, both on and off the course. 
-                Manufactured entirely in the UK, our tees outpace the competition by biodegrading up to 3x faster, thanks to our 
-                distinctive recycled paper composite material. Redefining the stereotype around paper products, our tees are 
-                not only strong and durable but also reusable. With an innovative biodegradable dextrin binder, they match the 
-                strength of traditional bamboo and wood - no need to worry about bent or broken tees.</p>
-        </div>
-        <div id="footer-contact">
-            <h1>Contact Us</h1>
-            <ul>
-                <li><a href="mailto:e.tee.youngenterprise@gmail.com">Email: e.tee.youngenterprise@gmail.com</a></li>
-                <li><a href="https://www.instagram.com/e_tee.ye/">Instagram: @e_tee.ye</a></li>
-                <li><a href="https://www.tiktok.com/@e.tee7?lang=en">TikTok: @e.tee7</a></li>
-            </ul>
-        </div>
-        <script>
-            function adjustFooterHeight() {
-                const legal = document.getElementById("footer-legal")
-                const about = document.getElementById("footer-about")
-                const contact = document.getElementById("footer-contact")
-                const height = about.offsetHeight
-                legal.style.height = "calc(" + height + "px - 4vh)"
-                contact.style.height = "calc(" + height + "px - 4vh)"
-            }
-            adjustFooterHeight();
-            window.addEventListener("resize", function () {
-                clearTimeout(this.resizeTimeout);
-                this.resizeTimeout = setTimeout(function () {
-                    adjustFooterHeight();
-                }, 100);
-            });
-        </script>
+    <div class="shop-button">
+        <a href="https://www.ye-tradingstation.org.uk/product/eco-friendly-golf-tees?v=2932">SHOP NOW</a>
     </div>
+
+    <div id="spacer5rem" class="spacer"></div>
+
+    <div class="carousel-container">
+        <div class="carousel">
+            <div id="image-1" class="carousel-image"></div>
+            <div id="image-2" class="carousel-image"></div>
+            <div id="image-3" class="carousel-image"></div>
+        </div>
+        <a href="" class="cycle-button" id="left" onclick="cycle(event)"><i class="fa-solid fa-circle-arrow-left"></i></a>
+        <a href="" class="cycle-button" id="right" onclick="cycle(event)"><i class="fa-solid fa-circle-arrow-right"></i></a>
+    </div>
+
+    <script>
+        let left = 0
+        let mid = 1
+        let right = 2
+
+        const leftSpace = document.getElementById("image-1")
+        const midSpace = document.getElementById("image-2")
+        const rightSpace = document.getElementById("image-3")
+
+        function cycle(event) {
+            event.preventDefault()
+
+            left = ((left + 1) % 3) + 1
+            mid = ((mid + 1) % 3) + 1
+            right = ((right + 1) % 3) + 1
+
+            leftSpace.style.backgroundImage = `url(images/tees${left}.jpg)`
+            midSpace.style.backgroundImage = `url(images/tees${mid}.jpg)`
+            rightSpace.style.backgroundImage = `url(images/tees${right}.jpg)`
+        }
+
+    </script>
+
+    <div id="spacer7rem" class="spacer"></div>
+
+    <div class="find-us">
+        <div class="where-to-buy">
+            <h1>Where can you find our products?</h1>
+            <p>Our products are available to by online, through the YE trading station, or in person. You can buy our products online by clicking the link <a href="https://www.ye-tradingstation.org.uk/product/eco-friendly-golf-tees?v=2932">here</a>.</p>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2462.8793585131107!2d-2.046280087484752!3d51.88141468319431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48711bd15594737f%3A0xb49f08da72c55a0b!2sBalcarras%20Academy!5e0!3m2!1sen!2suk!4v1714836471828!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <div id="spacer5rem" class="spacer"></div>
+
+    <div class="product-info">
+        <div class="info-text">
+            <p>Sourced from local schools, our recycled paper not only reinforces our commitment to sustainability but also fosters collaboration within our community to achieve a cleaner environment - on the course and off. All of our tees are 100% manufactured in the UK</p>
+        </div>
+        <div class="info-image">
+            <div id="info-image-1"></div>
+        </div>
+        <div class="info-image" id="hide-on-mobile">
+            <div id="info-image-2"></div>
+        </div>
+        <div  class="info-text">
+            <p>Redefining the stigma around paper products, our tees are strong, durable and reusable. Through our innovative use of a biodegradable dextrin binder, our tees boast a strength comparable to traditional bamboo and wood - no need to worry about about bending or breaking with a stray swing.</p>
+        </div>
+        <div class="info-image" id="show-on-mobile">
+            <div id="info-image-2"></div>
+        </div>
+    </div>
+
+    <div id="spacer7rem" class="spacer"></div>
+
+    <footer>
+        <div class="footer-card">
+            <div class="footer-content">
+                <h1>LEGAL</h1>
+                <ul>
+                    <li>Company name: E-Tee A Branch Of Young Enterprise</li>
+                    <li>Young Enterprise charity number: 313697</li>
+                    <li>Young Enterprise registered office:</li>
+                    <li>Young Enterprise</li>
+                    <li>The Coram Campus,</li>
+                    <li>41 Brunswick Square,</li>
+                    <li>London,</li>
+                    <li>WC1N 1AZ</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-card">
+            <div class="footer-content">
+                <h1>ABOUT US</h1>
+                <p>Elevate your game with our eco-friendly tees, crafted from locally sourced recycled paper. 
+                    Championing sustainability, our tees reinforce our commitment to a cleaner environment, both on and off the course. 
+                    Manufactured entirely in the UK, our tees outpace the competition by biodegrading up to 3x faster, thanks to our 
+                    distinctive recycled paper composite material. Redefining the stereotype around paper products, our tees are 
+                    not only strong and durable but also reusable. With an innovative biodegradable dextrin binder, they match the 
+                    strength of traditional bamboo and wood - no need to worry about bent or broken tees.</p>            </div>
+        </div>
+        <div class="footer-card">
+            <div class="footer-content">
+                <h1>CONTACT US</h1>
+                <ul>
+                    <li><a href="mailto:e.tee.youngenterprise@gmail.com">Email: e.tee.youngenterprise@gmail.com</a></li>
+                    <li><a href="https://www.instagram.com/e_tee.ye/">Instagram: @e_tee.ye</a></li>
+                    <li><a href="https://www.tiktok.com/@e.tee7?lang=en">TikTok: @e.tee7</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openMenu() {
+            event.preventDefault()
+            const nav = document.getElementById("nav")
+            nav.style.right = "0"
+        }
+        function closeMenu() {
+            event.preventDefault()
+            const nav = document.getElementById("nav")
+            nav.style.right = "-100%"
+        }
+        function resizeNav() {
+            document.getElementById("nav").contentWindow.location.reload(true);
+        }
+        window.addEventListener("resize", resizeNav)
+    </script>
 
 </body>
 </html>
